@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: #FAFAFA;
+
+    font-family: "Segoe UI","Roboto","Helvetica","Arial",sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginpage {
+    width: 100%;
+    height: 600px;
+
+    max-width: 992px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#loginpage .colunas {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    flex:1;
+
+    margin: 10px;
+}
+
+.colunas img {
+    height: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.profile, .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    margin-bottom: 16px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #918F93;
+
+    padding: 24px 0;
+}
+
+.profile img {
+    width: 50%;
+    margin-bottom: 24px;
+}
+
+.profile .avatar {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+}
+
+.profile .btn {
+    background-color: #2B8FFC;
+    padding: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.profile a {
+    color: #2B8FFC;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.signup p {
+    font-size: 16px;
+    color: #918F93;
+
+    margin-bottom: 5px;
+}
+
+.signup p a{
+    font-size: 16px;
+    color: #2B8FFC;
+    font-weight: 600;
+}
+
+.app {
+    width: 90%;
+    padding: 24px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #171617;
+}
+
+.app-stores {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.app-stores img {
+    width: 150px;
+}
+
+@media(max-width:992px) {
+    .phone {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    #loginpage {
+        flex-direction: column;
+    }
+}
