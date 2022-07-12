@@ -126,7 +126,8 @@ main {
 }
 
 .app-stores img {
-    width: 150px;
+    width: 10em;
+    height: auto;
 }
 
 @media(max-width:992px) {
